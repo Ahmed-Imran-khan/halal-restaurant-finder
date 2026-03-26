@@ -118,7 +118,7 @@
 //   )
 // }
 
-// export default App
+// export default App  
 import { useState, useMemo } from "react";
 import { useRestaurants } from "./hooks/useRestaurants";
 import MapView from "./components/MapView";
