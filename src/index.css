@@ -147,7 +147,7 @@ body {
   background: #ebfaf5;
   padding: 14px 24px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
@@ -167,6 +167,7 @@ body {
 
 .navbar input,
 .navbar select {
+  margin: 0px 2px;
   padding: 9px 16px;
   border-radius: 25px;
   border: none;
@@ -273,20 +274,38 @@ body {
   color: #1a1a1a;
   margin-bottom: 4px;
 }
-
-.card-address {
-  color: #777;
-  font-size: 13px;
-  margin-bottom: 14px;
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
+.address-body {
+  margin-top: 30px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
-
+.card-address {
+  background-color: #ebfaf5;
+  padding: 15px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
 .card-details {
-  font-size: 13px;
+  background-color: #ebfaf5;
+  padding: 15px;
+  border-radius: 10px;
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
   line-height: 2;
-  color: #444;
+}
+.card-details > h4,
+.card-address > h4 {
+  font-size: 10px;
+  color: rgb(165, 165, 165);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 0px;
 }
 
 .card-details a {
