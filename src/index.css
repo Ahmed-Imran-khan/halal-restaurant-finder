@@ -228,17 +228,17 @@ body {
 
 .card-body {
   position: absolute;
-  top: 200px;
+  bottom: 0px;
   padding: 30px;
-  padding-top: 50px;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
+  padding-top: 60px;
   background-image: linear-gradient(
     to bottom,
-    rgba(252, 252, 252, 0),
-    #9d9d9de5,
+    rgba(0, 0, 0, 0),
+    #555555e5,
     #dddddd,
-    white,
+    #dddddd,
     white,
     white,
     white
