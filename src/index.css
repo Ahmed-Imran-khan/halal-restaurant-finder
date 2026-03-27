@@ -131,7 +131,13 @@ body {
   background: #1a5c38;
   border-radius: 10px;
 }
-
+.loading {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -185,16 +191,18 @@ body {
   position: fixed;
   top: 64px;
   right: 0;
-  /* left: 14px; */
-  z-index: 1000;
-  background: white;
-  /* border-radius: 20px; */
-  width: 50%;
+  z-index: 401;
+  width: 40%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
   max-height: 101vh;
   height: 100%;
-  /* overflow-y: auto; */
   animation: slideIn 0.3s ease;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  /* left: 14px; */
+  /* border-radius: 20px; */
+  /* overflow-y: auto; */
 }
 
 @keyframes slideIn {
@@ -209,13 +217,31 @@ body {
 }
 
 .card-image {
+  position: absolute;
   width: 100%;
   height: 50%;
+  z-index: -5;
   object-fit: cover;
+  background-color: #1a1a1a;
 }
 
 .card-body {
-  padding: 16px;
+  position: absolute;
+  top: 200px;
+  padding: 30px;
+  padding-top: 50px;
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(252, 252, 252, 0),
+    #9d9d9de5,
+    #dddddd,
+    white,
+    white,
+    white,
+    white
+  );
 }
 
 .badge {
@@ -229,17 +255,20 @@ body {
 }
 
 .badge-halal {
-  background: #1a5c38;
+  background: #590061;
   color: white;
 }
 .badge-cuisine {
-  background: #eef4f0;
-  color: #1a5c38;
-  border: 1px solid #1a5c38;
+  width: 100%;
+  padding: 0;
+  color: rgb(75, 75, 75);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .card-title {
-  font-size: 22px;
+  font-size: 42px;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 4px;

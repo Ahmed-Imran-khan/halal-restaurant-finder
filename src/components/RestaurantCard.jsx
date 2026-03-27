@@ -1,3 +1,5 @@
+import { ForkIcons } from "../icons/icon";
+
 const FOOD_IMAGES = [
   "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400",
   "https://images.unsplash.com/photo-1561626423-a51b45bef2b4?w=400",
@@ -25,10 +27,11 @@ function RestaurantCard({ restaurant, onClose }) {
           <span className="badge badge-halal">
             {isFullyHalal ? "✓ Fully Halal" : "◑ Halal Options"}
           </span>
-          <span className="badge badge-cuisine">{restaurant.cuisine}</span>
+          {/* <span className="badge badge-cuisine">{restaurant.cuisine}</span> */}
         </div>
 
         <h2 className="card-title">{restaurant.name}</h2>
+        <span className="badge badge-cuisine"><ForkIcons/> {restaurant.cuisine}</span>
 
         <p className="card-address">
           📍 {restaurant.address}, {restaurant.city}

@@ -118,7 +118,7 @@
 //   )
 // }
 
-// export default App  
+// export default App
 import { useState, useMemo } from "react";
 import { useRestaurants } from "./hooks/useRestaurants";
 import MapView from "./components/MapView";
@@ -153,7 +153,13 @@ function App() {
   }, [restaurants, search, cityFilter, cuisineFilter]);
   console.log("Restaurants:", restaurants);
   if (loading)
-    return <h2 style={{ padding: "20px" }}>Loading restaurants...</h2>;
+    return (
+      <>
+      <div className="loading">
+        <h2 style={{ padding: "20px" }}>Loading restaurants...</h2>
+      </div>
+      </>
+    );
   if (error) return <h2 style={{ padding: "20px" }}>Error: {error}</h2>;
 
   return (
