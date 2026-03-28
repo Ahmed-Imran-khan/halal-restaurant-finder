@@ -12,7 +12,7 @@ const FALLBACK_DATA = [
     { name: "Oulu Halal Kitchen", address: "Kajaaninkatu 5", city: "Oulu", lat: 65.0121, lng: 25.4651, cuisine: "Pakistani", halal_status: "Fully Halal", phone: "+358 8 222 3333", website: "", hours: "Mon-Sat 11:00-21:00" },
     { name: "Turku Spice Garden", address: "Yliopistonkatu 8", city: "Turku", lat: 60.4518, lng: 22.2666, cuisine: "Indian", halal_status: "Halal Options", phone: "+358 2 333 4444", website: "", hours: "Mon-Sun 11:00-22:00" },
     { name: "Jyväskylä Shawarma", address: "Kauppakatu 15", city: "Jyväskylä", lat: 62.2426, lng: 25.7473, cuisine: "Syrian", halal_status: "Fully Halal", phone: "+358 14 444 5555", website: "", hours: "Mon-Sun 10:00-22:00" },
-    { name: "Espoo Halal Grill", address: "Tapiolantie 3", city: "Espoo", lat: 60.2052, lng: 24.6559, cuisine: "Turkish", halal_status: "Fully Halal", phone: "+358 9 555 6666", website: "", hours: "Mon-Sun 11:00-23:00" },
+    { name: "Espoo Halal Grill", address: "Tapiolantie 3", city: "Espoo", lat: 60.2052, lng: 24.6559, cuisine: "Turkish Special", halal_status: "Fully Halal", phone: "+358 9 555 6666", website: "", hours: "Mon-Sun 11:00-23:00" },
     { name: "Vantaa Afghan Kitchen", address: "Tikkurilantie 12", city: "Vantaa", lat: 60.2934, lng: 25.0378, cuisine: "Afghan", halal_status: "Fully Halal", phone: "+358 9 666 7777", website: "", hours: "Mon-Sat 12:00-21:00" },
     { name: "Helsinki Somali Restaurant", address: "Kontulantie 4", city: "Helsinki", lat: 60.2310, lng: 25.0842, cuisine: "Somali", halal_status: "Fully Halal", phone: "+358 9 777 8888", website: "", hours: "Mon-Sun 11:00-21:00" },
 ]

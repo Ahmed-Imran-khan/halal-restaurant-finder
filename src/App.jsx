@@ -175,7 +175,7 @@ function App() {
         cuisines={cuisines}
       />
       <RestaurantCard restaurant={selected} onClose={() => setSelected(null)} />
-      <div style={{ paddingTop: "60px", height: "100%" }}>
+      <div style={{ height: "100%" }}>
         <MapView restaurants={filtered} onSelectRestaurant={setSelected} />
       </div>
     </div>
