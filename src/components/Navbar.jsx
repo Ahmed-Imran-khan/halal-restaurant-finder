@@ -14,7 +14,7 @@ function Navbar({
 
   return (
     <div className="navbar">
-      <div className="navbar-brand">Halal Restaurant Finder Finland</div>
+      <div className="navbar-brand">Halal Restaurant Finder</div>
 
       {/* Toggle Button */}
       {/* <button className="navbar-toggle" onClick={() => setOpen(!open)}>
