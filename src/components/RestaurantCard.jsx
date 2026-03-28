@@ -1,11 +1,5 @@
 import { ForkIcons, PhoneIcons } from "../icons/icon";
-
 const FOOD_IMAGES = [
-  "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400",
-  "https://images.unsplash.com/photo-1561626423-a51b45bef2b4?w=400",
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400",
-  "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
-  "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400",
   "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400",
   "https://images.unsplash.com/photo-1561626423-a51b45bef2b4?w=400",
   "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400",
@@ -22,10 +16,19 @@ function RestaurantCard({ restaurant, onClose }) {
   return (
     <div className="restaurant-card">
       <button className="close-btn" onClick={onClose}>
-         &#x2190;
+        &#x2190;
       </button>
 
-      <img className="card-image" src={img} alt="food" />
+      <img
+        className="card-image"
+        src={img}
+        alt="food"
+        onError={(e) => {
+          e.target.onerror = null;
+          e.target.src =
+            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400";
+        }}
+      />
 
       <div className="card-body">
         <div>

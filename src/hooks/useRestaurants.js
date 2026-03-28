@@ -27,9 +27,12 @@ export function useRestaurants() {
             .then((res) => res.text())
             .then((csvText) => {
                 const data = sheetParser(csvText)
-                const valid = data.filter(r => r.lat && r.lng)
-                // Merge sheet data with fallback, sheet data takes priority
-                const merged = [...valid, ...FALLBACK_DATA].slice(0, 20)
+                console.log('RAW sheet data:', data)  // ADD THIS
+                const validFromSheet = data.filter(r => r.lat && r.lng)
+                console.log('Valid from sheet:', validFromSheet)  // ADD THIS
+                const sheetNames = validFromSheet.map(r => r.name.toLowerCase())
+                const uniqueFallback = FALLBACK_DATA.filter(r => !sheetNames.includes(r.name.toLowerCase()))
+                const merged = [...validFromSheet, ...uniqueFallback]
                 setRestaurants(merged)
                 setLoading(false)
             })
