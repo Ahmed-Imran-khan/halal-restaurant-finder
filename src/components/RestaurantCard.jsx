@@ -22,7 +22,7 @@ function RestaurantCard({ restaurant, onClose }) {
   return (
     <div className="restaurant-card">
       <button className="close-btn" onClick={onClose}>
-        ✕
+        ◀ 
       </button>
 
       <img className="card-image" src={img} alt="food" />

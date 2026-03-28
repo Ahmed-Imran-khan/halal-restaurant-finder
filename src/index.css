@@ -197,8 +197,8 @@ body {
 
 .close-btn {
   position: absolute;
-  top: 12px;
-  right: 14px;
+  top: 30%;
+  left: 14px;
   background: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 50%;
@@ -310,5 +310,24 @@ body {
   .card-details {
     padding: 15px;
     font-size: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .restaurant-card {
+    width: 100%;
+  }
+  .card-title {
+    font-size: 30px;
+  }
+  .card-address {
+    padding: 15px;
+    font-size: 15px;
+  }
+  .card-details {
+    padding: 15px;
+    font-size: 15px;
+  }
+  .leaflet-control-zoom {
+    display: none !important;
   }
 }
